@@ -3425,7 +3425,7 @@ body[data-theme="dark"] .language-item:hover {
 }
 
 .creator-showcase {
-  text-align: center;
+  text-align: left;
   padding: 1rem;
 }
 
@@ -3435,7 +3435,7 @@ body[data-theme="dark"] .language-item:hover {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: -0.5px;
-  color: var(--text);
+  color: var(--border);
   opacity: 1;
   display: inline-block;
   padding: 0.5rem 1.4rem;
