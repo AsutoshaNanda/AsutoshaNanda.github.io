@@ -3671,7 +3671,8 @@ body[data-theme="dark"] .section-title {
 }
 
 @media (max-width: 600px) {
-  .hk-float { display: none; }
+  .hk-float-hornet { width: 70px; left: 64px; top: -52px; }
+  .hk-float-shade { width: 72px; left: 24px; bottom: -48px; }
 }
 
 /* ============================================================
@@ -3858,8 +3859,21 @@ body[data-theme="dark"] .contact-card:nth-child(6) { background: #c0a060; }
   cursor: not-allowed;
 }
 
+/* Bordered panel that visually contains a grid + its pager, so the pager
+   reads as in-box pagination rather than whole-site navigation. */
+.paginated-panel {
+  background: var(--bg-surface);
+  border: 4px solid var(--border);
+  box-shadow: 8px 8px 0 var(--border);
+  padding: 1.5rem 1.5rem 1.1rem;
+  text-align: left;
+}
+.paginated-panel .certs-grid { margin-bottom: 0; }
+.paginated-panel .projects-pagination { margin-top: 1.4rem; margin-bottom: 0; }
+
 @media (max-width: 600px) {
   .creator-projects-grid { grid-template-columns: 1fr; }
+  .paginated-panel { padding: 1rem 1rem 0.85rem; box-shadow: 5px 5px 0 var(--border); }
 }
 
 /* ============ Phase 10/11: cute character cutouts + featured nav chip ============ */
@@ -3902,7 +3916,7 @@ body[data-theme="dark"] .contact-card:nth-child(6) { background: #c0a060; }
   .hk-deco { width: 100px !important; opacity: 0.8; }
 }
 @media (max-width: 768px) {
-  .hk-deco { display: none; }
+  .hk-deco { width: 64px !important; opacity: 0.7; }
 }
 
 /* ===== Phase 12 ===== */
